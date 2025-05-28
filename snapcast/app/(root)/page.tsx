@@ -1,8 +1,9 @@
-import React from 'react'
-
 const Page = () => {
   return (
-    <div>Page</div>
+     <main className="wrapper page">
+      <h1 className="text-3xl font-karla">Welcome to SnapCast</h1> 
+
+     </main>
   )
 }
 
