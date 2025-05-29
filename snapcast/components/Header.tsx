@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+// Update the path below to the actual location of your icons file
 
 const Header = ({ subHeader, title, userImg }: SharedHeaderProps) => {
   return (
@@ -21,10 +22,29 @@ const Header = ({ subHeader, title, userImg }: SharedHeaderProps) => {
           <Image src="/assets/icons/upload.svg" alt="Upload Icon" width={16} height={16} className="upload-icon" />
           <span>Uplaod a Video!</span>
           </Link>
+          <div className='record'>
+
+          <button className='primary-btn'>
+            <Image src="./assets/icons/record.svg" alt='Record Video Icon' width={16} height={16} />
+            <span>Record a video</span>
+          </button>
+          </div>
         </aside>
 
 
 
+      </section>
+
+      <section className='search-filter'>
+        <div className='search'>
+          <input 
+          
+          type="text"
+          placeholder='Search for Videos, Tags, folders ...'
+           />
+           <Image src="/assets/icons/search.svg" alt="Search Icon" width={16} height={16} className="search-icon" />
+        </div>
+        {`<DropdownList />`}
       </section>
     </header>
   )
