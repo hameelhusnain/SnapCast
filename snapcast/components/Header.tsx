@@ -25,7 +25,7 @@ const Header = ({ subHeader, title, userImg }: SharedHeaderProps) => {
           <div className='record'>
 
           <button className='primary-btn'>
-            <Image src="./assets/icons/record.svg" alt='Record Video Icon' width={16} height={16} />
+            <Image src="/assets/icons/record.svg" alt='Record Video Icon' width={16} height={16} />
             <span>Record a video</span>
           </button>
           </div>

@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 
+
 const page = async ({params}: ParamsWithSearch) => {
     const { id } = await params;
   return (
