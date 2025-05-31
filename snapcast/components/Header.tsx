@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-// Update the path below to the actual location of your icons file
+import DropdownList from './DropdownList'
 
 const Header = ({ subHeader, title, userImg }: SharedHeaderProps) => {
   return (
@@ -25,7 +25,7 @@ const Header = ({ subHeader, title, userImg }: SharedHeaderProps) => {
           <div className='record'>
 
           <button className='primary-btn'>
-            <Image src="./assets/icons/record.svg" alt='Record Video Icon' width={16} height={16} />
+            <Image src="/assets/icons/record.svg" alt='Record Video Icon' width={16} height={16} />
             <span>Record a video</span>
           </button>
           </div>
@@ -44,7 +44,8 @@ const Header = ({ subHeader, title, userImg }: SharedHeaderProps) => {
            />
            <Image src="/assets/icons/search.svg" alt="Search Icon" width={16} height={16} className="search-icon" />
         </div>
-        {`<DropdownList />`}
+
+        <DropdownList />
       </section>
     </header>
   )
