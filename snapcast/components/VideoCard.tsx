@@ -1,4 +1,4 @@
-const VideoCard = () => {
+  const VideoCard = () => {
   return (
     <div>VideoCard</div>
   )
