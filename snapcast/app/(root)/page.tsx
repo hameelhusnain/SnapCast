@@ -9,11 +9,11 @@ const Page = () => {
       id="1"
       title="SnapChat Message - 30 May 2023"
       thumbnail="/assets/samples/thumbnail (1).png"
-      createdAt="2023-05-30T12:00:00Z"
-      userImage="/assets/images/jason.png"
+      createdAt={new Date("2023-05-30T12:00:00Z")}
+      userImg="/assets/images/jason.png"
       username="Jason"
       visibility="public"
-      views="1.2K"
+      views={526}
       duration={156}
       />
      </main>

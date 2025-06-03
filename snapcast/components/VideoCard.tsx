@@ -1,10 +1,11 @@
 import Link from "next/link"
+import Image from "next/image"
 
   const VideoCard = ({
     id,
-    tittle,
+    title,
     thumbnail,
-    userImage,
+    userImg,
     username,
     createdAt,
     views,
@@ -12,7 +13,9 @@ import Link from "next/link"
     visibility,
   }: VideoCardProps) => {
   return (
-    <Link href={`/video/${id}`} className="video-card"></Link>
+    <Link href={`/video/${id}`} className="video-card">
+      <Image src={thumbnail} alt={thumbnail} className="thumbnail"   width={290} height={160} />
+    </Link>
   )
 }
 
