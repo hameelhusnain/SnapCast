@@ -1,6 +1,18 @@
-  const VideoCard = () => {
+import Link from "next/link"
+
+  const VideoCard = ({
+    id,
+    tittle,
+    thumbnail,
+    userImage,
+    username,
+    createdAt,
+    views,
+    duration,
+    visibility,
+  }: VideoCardProps) => {
   return (
-    <div>VideoCard</div>
+    <Link href={`/video/${id}`} className="video-card"></Link>
   )
 }
 
