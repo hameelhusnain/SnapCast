@@ -5,7 +5,17 @@ const Page = () => {
      <main className="wrapper page">
       <Header title="All videos" subHeader="Public Library"/>
       <h1 className="text-3xl font-karla">Welcome to SnapCast</h1>
-      <VideoCard />
+      <VideoCard 
+      id="1"
+      title="SnapChat Message - 30 May 2023"
+      thumbnail="/assets/samples/thumbnail (1).png"
+      createdAt={new Date("2023-05-30T12:00:00Z")}
+      userImg="/assets/images/jason.png"
+      username="Jason"
+      visibility="public"
+      views={526}
+      duration={156}
+      />
      </main>
   )
 }
