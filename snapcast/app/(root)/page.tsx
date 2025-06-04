@@ -7,7 +7,7 @@ const Page = () => {
       <h1 className="text-3xl font-karla">Welcome to SnapCast</h1>
       <VideoCard 
       id="1"
-      title="SnapChat Message - 30 May 2023"
+      title="SnapChat Message"
       thumbnail="/assets/samples/thumbnail (1).png"
       createdAt={new Date("2023-05-30T12:00:00Z")}
       userImg="/assets/images/jason.png"
