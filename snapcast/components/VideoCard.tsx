@@ -39,6 +39,7 @@ const VideoCard = ({
           })}
         </h2>
       </article>
+<<<<<<< HEAD
       <button onClick={() => {}} className="copy-btn">
         <Image src="/assets/icons/link.svg" alt="copy" width={34} height={18} />
       </button>
@@ -48,6 +49,8 @@ const VideoCard = ({
 
         </div>
       )}
+=======
+>>>>>>> refs/remotes/origin/Video-Card
     </Link>
   )
 }
