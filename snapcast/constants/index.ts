@@ -137,3 +137,5 @@ export const dummyCards = [
     duration: 345,
   }
 ]
+
+type Visibility = "public" | "private";
