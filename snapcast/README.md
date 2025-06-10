@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SnapCast
+
+SnapCast is a modern video recording and sharing web application built with [Next.js](https://nextjs.org). Users can record, upload, and view videos in a public or private library, making it easy to share knowledge, updates, or moments with others.
+
+---
+
+## Features
+
+- 🎥 **Record Videos:** Capture video directly from your browser.
+- ⬆️ **Upload Videos:** Upload video files and thumbnails.
+- 📚 **Video Library:** Browse all public and private videos.
+- 👤 **User Profiles:** View user details and their uploaded videos.
+- 🔍 **Search & Filter:** Find videos by tags, folders, or popularity.
+- 👁️ **View Counts:** See how many times a video has been watched.
+- 🔒 **Visibility Control:** Set videos as public or private.
+- ⚡ **Fast Streaming:** Videos are delivered via BunnyCDN for smooth playback.
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### 1. Install Dependencies
+
+```bash
+npm install
+# or
+yarn install
+```
+
+### 2. Run the Development Server
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Structure
 
-## Learn More
+- `app/` – Next.js app directory (pages, layouts, routes)
+- `components/` – Reusable React components (Navbar, Header, VideoCard, etc.)
+- `constants/` – Static data and configuration
+- `public/` – Static assets (icons, images, thumbnails)
+- `styles/` – CSS and styling files
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Technologies Used
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- [Next.js](https://nextjs.org/)
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [BunnyCDN](https://bunny.net/) (for video delivery)
+- [Tailwind CSS](https://tailwindcss.com/) (for styling)
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
+
+---
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+**Enjoy recording and sharing with SnapCast!**
