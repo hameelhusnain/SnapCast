@@ -15,17 +15,6 @@ const Page = () => {
           />
         ))}
       </section>
-            <VideoCard 
-      id="1"
-      title="SnapChat Message"
-      thumbnail="/assets/samples/thumbnail (1).png"
-      createdAt={new Date("2023-05-30T12:00:00Z")}
-      userImg="/assets/images/jason.png"
-      username="Jason"
-      visibility="public"
-      views={526}
-      duration={156}
-      />
      </main>
   )
 }
