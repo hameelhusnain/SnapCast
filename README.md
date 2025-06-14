@@ -10,6 +10,15 @@ SnapCast is a modern, full-featured video recording and sharing web application 
 
 SnapCast is designed to make video content creation and sharing accessible to everyone, directly from the browser. The platform eliminates the need for external software, allowing users to record high-quality videos on any device, organize them with tags and folders, and control their visibility with robust privacy settings.
 
+**SnapCast provides a seamless and intuitive experience for users of all backgrounds. Whether you're a teacher sharing lessons, a developer explaining code, or a team member updating your colleagues, SnapCast makes it effortless to capture and distribute video content.**
+
+**With SnapCast, you can:**
+- Instantly record your screen, webcam, or both, and share the results with a single link.
+- Organize your videos with tags, folders, and custom thumbnails for easy retrieval.
+- Control who sees your content with flexible privacy and visibility settings.
+- Discover trending and popular videos from the community, and engage with other users.
+- Enjoy fast, reliable video streaming powered by BunnyCDN, ensuring your content is always accessible.
+
 ### Why SnapCast?
 
 - **All-in-One Solution:** SnapCast combines video recording, uploading, management, and sharing in a single, intuitive interface.
@@ -17,6 +26,8 @@ SnapCast is designed to make video content creation and sharing accessible to ev
 - **Community Engagement:** Discover trending videos, follow other users, and interact through comments and likes.
 - **Performance:** Videos are streamed efficiently and securely via BunnyCDN, ensuring smooth playback and fast delivery worldwide.
 - **Scalable & Modern:** Built with the latest web technologies (Next.js, React, TypeScript, Tailwind CSS), SnapCast is fast, responsive, and easy to maintain.
+
+**SnapCast is perfect for educators, content creators, teams, and anyone who wants to share video content quickly and securely. The platform is designed to scale with your needs, supporting everything from quick screen recordings to large video libraries.**
 
 ### Use Cases
 
