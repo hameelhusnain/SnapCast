@@ -21,6 +21,7 @@ const page = () => {
                 />
               ))}
             </figure>
+            <p>Snapcast Makes screen recording easy. From quick walkthroughs to full presentation, it's fast, smooth and shareable in seconds.</p>
           </section>
         </div>
 
