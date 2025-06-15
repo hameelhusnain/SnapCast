@@ -46,6 +46,7 @@ const page = () => {
             </button>
           </section>
         </aside>
+        <div className="overlay" />
 
     </main>
   )
