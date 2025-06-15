@@ -37,7 +37,9 @@ const page = () => {
           <section>
             <Link href="/">
             <Image src="/assets/icons/logo.svg" alt="Snapcast Logo" width={40} height={40} />
+            <h1>SnapCast</h1>
             </Link>
+            <p>Create and share your very first <span>SnapCast Video</span>in no time!</p>
           </section>
         </aside>
 
