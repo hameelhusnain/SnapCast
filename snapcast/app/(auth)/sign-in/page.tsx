@@ -8,6 +8,21 @@ const page = () => {
         <Link href="/">
         <Image src="/assets/icons/logo.svg" alt="Snapcast Logo" width={32} height={32} />
         </Link>
+        <div className="description">
+          <section>
+            <figure>
+              {Array.from({ length: 3 }).map((_, index) => (
+                <Image
+                  key={index}
+                  src="/assets/icons/star.svg"
+                  alt="star icon"
+                  width={20}
+                  height={20}
+                />
+              ))}
+            </figure>
+          </section>
+        </div>
 
         </aside>
 
