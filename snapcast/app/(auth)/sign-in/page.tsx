@@ -40,6 +40,10 @@ const page = () => {
             <h1>SnapCast</h1>
             </Link>
             <p>Create and share your very first <span>SnapCast Video</span>in no time!</p>
+            <button>
+              <Image src="/assets/icons/google.svg" alt="Google Icon" width={20} height={20} />
+              <span>Sign in with Google</span>
+            </button>
           </section>
         </aside>
 
