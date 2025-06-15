@@ -31,7 +31,14 @@ const page = () => {
             </article>
           </section>
         </div>
-
+        <p>© SnapCast {(new Date()).getFullYear()}</p>
+        </aside>
+        <aside className="google-sign-in">
+          <section>
+            <Link href="/">
+            <Image src="/assets/icons/logo.svg" alt="Snapcast Logo" width={40} height={40} />
+            </Link>
+          </section>
         </aside>
 
     </main>
