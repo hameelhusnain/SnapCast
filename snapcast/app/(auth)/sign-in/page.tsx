@@ -21,7 +21,14 @@ const page = () => {
                 />
               ))}
             </figure>
-            <p>Snapcast Makes screen recording easy. From quick walkthroughs to full presentation, it's fast, smooth and shareable in seconds.</p>
+            <p>Snapcast makes screen recording easy. From quick walkthroughs to full presentation, it's fast, smooth and shareable in seconds.</p>
+            <article>
+              <Image src={"/assets/images/jason.png"} alt={"jason"} width={64} height={64} className="rounded-full" />
+              <div>
+                <h2>Husnain Hameel</h2>
+                <p>Full Stack Developer - Google</p>
+              </div>
+            </article>
           </section>
         </div>
 
