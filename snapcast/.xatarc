@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://Husnain-Hameel-s-workspace-ratuo1.eu-central-1.xata.sh/db/hhb_snapcast",
+  "codegen": {
+    "output": "src/xata.ts"
+  }
+}
