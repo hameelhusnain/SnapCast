@@ -11,6 +11,7 @@
   "dependencies": {
     "@xata.io/client": "^0.0.0-next.v93343b9646f57a1e5c51c35eccf0767c2bb80baa",
     "better-auth": "^1.2.9",
+    "dotenv": "^16.5.0",
     "drizzle-orm": "^0.44.2",
     "next": "15.3.2",
     "pg": "^8.16.0",
@@ -25,7 +26,7 @@
     "@types/node": "^20.19.0",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "drizzle-kit": "^0.18.1",
+    "drizzle-kit": "^0.31.1",
     "eslint": "^9",
     "eslint-config-next": "15.3.2",
     "tailwindcss": "^4",
