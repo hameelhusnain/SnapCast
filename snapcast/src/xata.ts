@@ -2,9 +2,8 @@
 import { buildClient } from "@xata.io/client";
 import type {
   BaseClientOptions,
-  SchemaInference,
-  XataRecord,
 } from "@xata.io/client";
+export type  DatabaseSchema = {  };
 
 
 const DatabaseClient = buildClient();
