@@ -1,8 +1,13 @@
+import FileInput from "@/components/FileInput"
+import FormField from "@/components/FormField"
 
 
 const page = () => {
   return (
-    <div>page</div>
+    <div className="wrapper page">
+        <FormField />
+        <FileInput />
+    </div>
   )
 }
 
