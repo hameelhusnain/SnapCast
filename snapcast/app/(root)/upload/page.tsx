@@ -1,7 +1,7 @@
 'use client';
 import FileInput from "@/components/FileInput"
 import FormField from "@/components/FormField"
-import { useState } from "react"
+import { ChangeEvent, useState } from "react"
 
 
 const page = () => {
@@ -11,6 +11,13 @@ const page = () => {
     visibility: 'public',
   });
     const[error, setError] = useState(null);
+    const handleInputChange = (e: ChangeEvent) => {
+      const { name, value } = e.target;
+      setFormData((prevData) => ({
+        ...prevData,
+        [name]: value,
+      }));
+    }
   return (
     <div className="wrapper-md upload-page">
         <h1>Upload a Video!</h1>
@@ -21,7 +28,8 @@ const page = () => {
             <FormField 
             id="title"
             label="Title"
-            value={}
+            value={formData.title}
+            onChange={}
             />
             <FileInput />
             <button className="btn btn-primary">Upload</button>
