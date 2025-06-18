@@ -5,7 +5,7 @@ import { useState } from "react"
 
 
 const page = () => {
-  
+  const [formData, setFormData] = useState('');
     const[error, setError] = useState(null);
   return (
     <div className="wrapper-md upload-page">
