@@ -8,7 +8,7 @@ const page = () => {
   const [formData, setFormData] = useState({
     title: '',
     description: '',
-    visibility: '',
+    visibility: 'public',
   });
     const[error, setError] = useState(null);
   return (
