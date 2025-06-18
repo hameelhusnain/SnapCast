@@ -5,6 +5,7 @@ import { useState } from "react"
 
 
 const page = () => {
+  
     const[error, setError] = useState(null);
   return (
     <div className="wrapper-md upload-page">
@@ -13,7 +14,11 @@ const page = () => {
         {error && <div className="error">{error}</div>}
 
         <form className="rounded-20 shadow-10 gap-6 w-full flex flex-cl px-5 py-7.5">
-            <FormField />
+            <FormField 
+            id="title"
+            label="Title"
+            value={}
+            />
             <FileInput />
             <button className="btn btn-primary">Upload</button>
         </form>
