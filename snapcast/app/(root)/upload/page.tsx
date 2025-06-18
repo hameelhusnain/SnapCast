@@ -5,7 +5,11 @@ import { useState } from "react"
 
 
 const page = () => {
-  const [formData, setFormData] = useState('');
+  const [formData, setFormData] = useState({
+    title: '',
+    description: '',
+    visibility: '',
+  });
     const[error, setError] = useState(null);
   return (
     <div className="wrapper-md upload-page">
