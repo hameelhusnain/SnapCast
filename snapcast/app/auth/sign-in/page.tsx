@@ -1,4 +1,3 @@
-
 'use client';
 
 import Link from "next/link"
@@ -13,7 +12,7 @@ const page = () => {
     <main className="sign-in">
         <aside className="testimonial">
         <Link href="/">
-        <Image src="/assets/icons/logo.svg" alt="Snapcast Logo" width={32} height={32} />
+        <img src="/assets/icons/logo.svg" alt="Snapcast Logo" width={32} height={32} />
         </Link>
         <div className="description">
           <section>
@@ -30,7 +29,7 @@ const page = () => {
             </figure>
             <p>Snapcast makes screen recording easy. From quick walkthroughs to full presentation, it's fast, smooth and shareable in seconds.</p>
             <article>
-              <Image src={"/assets/images/jason.png"} alt={"jason"} width={64} height={64} className="rounded-full" />
+              <Image src="/assets/images/jason.png" alt="Jason" width={64} height={64} />
               <div>
                 <h2>Husnain Hameel</h2>
                 <p>Full Stack Developer - Google</p>
@@ -43,12 +42,12 @@ const page = () => {
         <aside className="google-sign-in">
           <section>
             <Link href="/">
-            <Image src="/assets/icons/logo.svg" alt="Snapcast Logo" width={40} height={40} />
+            <img src="/assets/icons/logo.svg" alt="Snapcast Logo" width={40} height={40} />
             <h1>SnapCast</h1>
             </Link>
             <p>Create and share your very first <span>SnapCast Video</span>in no time!</p>
             <button onClick={handleSignIn}>
-              <Image src="/assets/icons/google.svg" alt="Google Icon" width={20} height={20} />
+              <img src="/assets/icons/google.svg" alt="Google Icon" width={20} height={20} />
               <span>Sign in with Google</span>
             </button>
           </section>
