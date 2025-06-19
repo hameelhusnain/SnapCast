@@ -31,9 +31,9 @@ const page = () => {
             <FormField 
             id="title"
             label="Title"
+            placeholder="Entter a clear and an amazing video title."
             value={formData.title}
             onChange={handleInputChange}
-            placeholder="Entter a clear and an amazing video title."
             />
             <FileInput />
             <button className="btn btn-primary">Upload</button>
