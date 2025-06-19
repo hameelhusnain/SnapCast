@@ -1,6 +1,7 @@
 'use client';
 import FileInput from "@/components/FileInput"
 import FormField from "@/components/FormField"
+import { desc } from "drizzle-orm";
 import { ChangeEvent, useState } from "react"
 
 
@@ -11,13 +12,15 @@ const page = () => {
     visibility: 'public',
   });
     const[error, setError] = useState(null);
-    const handleInputChange = (e: ChangeEvent) => {
-      const { name, value } = e.target;
+    const handleInputChange = (event: React.ChangeEvent<any>) => {
+      const { name, value } = event.target as HTMLInputElement;
+
       setFormData((prevData) => ({
         ...prevData,
         [name]: value,
       }));
     }
+
   return (
     <div className="wrapper-md upload-page">
         <h1>Upload a Video!</h1>
@@ -29,7 +32,8 @@ const page = () => {
             id="title"
             label="Title"
             value={formData.title}
-            onChange={}
+            onChange={handleInputChange}
+            placeholder="Entter a clear and an amazing video title."
             />
             <FileInput />
             <button className="btn btn-primary">Upload</button>
