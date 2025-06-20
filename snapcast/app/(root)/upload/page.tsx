@@ -35,8 +35,27 @@ const page = () => {
             value={formData.title}
             onChange={handleInputChange}
             />
+              <FormField 
+            id="description"
+            label="Description"
+            placeholder="Enter a clear and an amazing video description."
+            value={formData.description}
+            as="textarea"
+            onChange={handleInputChange}
+            />
             <FileInput />
-            <button className="btn btn-primary">Upload</button>
+            <FileInput />
+             <FormField 
+            id="visibility"
+            label="visibility"
+            value={formData.visibility}
+            as="select"
+            options={[
+              { value: 'public', label: 'Public' },
+              { value: 'private', label: 'Private' },
+            ]}
+            onChange={handleInputChange}
+            />
         </form>
 
     </div>
