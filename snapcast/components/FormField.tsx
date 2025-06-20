@@ -22,9 +22,9 @@ const FormField = ({ id, label, type = 'text', value, onChange, placeholder, as 
       onChange={onChange}
       
     >
-      {options.map((label: { value: string, label: string }) => (
-        <option key={label.value} value={label.value}>
-          {label.label}
+      {options.map(({ label, value }) => (
+        <option key={label} value={value}>
+          {label}
         </option>
       ))}
 
