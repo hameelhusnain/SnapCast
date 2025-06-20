@@ -35,6 +35,14 @@ const page = () => {
             value={formData.title}
             onChange={handleInputChange}
             />
+              <FormField 
+            id="description"
+            label="Description"
+            placeholder="Enter a clear and an amazing video description."
+            value={formData.description}
+            as="textarea"
+            onChange={handleInputChange}
+            />
             <FileInput />
             <button className="btn btn-primary">Upload</button>
         </form>
