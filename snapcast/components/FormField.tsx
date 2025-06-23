@@ -1,3 +1,5 @@
+import { Placeholder } from "drizzle-orm";
+import { type } from "os";
 import React from "react";
 
 interface Option {
@@ -76,9 +78,8 @@ const FormField = ({
 };
 
 export default FormField;
-=======
-const FormField = ({ id, label, type- 'text', value, onChange, Placeholder, as = 'input', option = []}: FormFieldProps) => {
-  const InputToRender = (type) => {
+const FormField = ({ id, label, type- 'text', value, onchange, Placeholder, as = 'input', Option = []}: FormFieldProps) => {
+  const InputToRender = (type: string) => {
     if(type === 'textarea') {
       return <textPath />
     }
