@@ -51,7 +51,6 @@ const FormField = ({ id, label, type = 'text', value, onChange, placeholder, as 
 }
 }
 export default FormField;
-=======
 const FormField = ({ id, label, type- 'text', value, onChange, Placeholder, as = 'input', option = []}: FormFieldProps) => {
   const InputToRender = (type) => {
     if(type === 'textarea') {
