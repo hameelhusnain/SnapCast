@@ -27,7 +27,7 @@ const page = () => {
 
         {error && <div className="error">{error}</div>}
 
-        <form className="rounded-20 shadow-10 gap-6 w-full flex flex-col px-5 py-7.5">
+        <form className="rounded-20 shadow-15 gap-6 w-full flex flex-col px-5 py-7.5">
             <FormField 
             id="title"
             label="Title"
