@@ -31,7 +31,7 @@ const page = () => {
             <FormField 
             id="title"
             label="Title"
-            placeholder="Entter a clear and an amazing video title."
+            placeholder="Enter your video title here."
             value={formData.title}
             onChange={handleInputChange}
             />
