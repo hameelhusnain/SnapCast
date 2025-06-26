@@ -1,6 +1,9 @@
 # SnapCast
 
-> **Created by: whoami (Your Name Here)**
+> **Created by: hameelhusnain**
+
+www.linkedin.com/in/hameelhusnain
+
 
 SnapCast is a modern, full-featured video recording and sharing web application built with [Next.js](https://nextjs.org). It empowers users to record, upload, and view videos in both public and private libraries, making it easy to share knowledge, updates, or memorable moments with others—whether for personal, educational, or professional purposes.
 

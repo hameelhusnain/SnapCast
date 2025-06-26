@@ -11,6 +11,8 @@ const page = () => {
     description: '',
     visibility: 'public',
   });
+  const video = {};
+  const thumbnail = {};
     const[error, setError] = useState(null);
     const handleInputChange = (event: React.ChangeEvent<any>) => {
       const { name, value } = event.target as HTMLInputElement;
@@ -27,16 +29,55 @@ const page = () => {
 
         {error && <div className="error">{error}</div>}
 
-        <form className="rounded-20 shadow-10 gap-6 w-full flex flex-cl px-5 py-7.5">
+        <form className="rounded-20 shadow-15 gap-6 w-full flex flex-col px-5 py-7.5">
             <FormField 
             id="title"
             label="Title"
-            placeholder="Entter a clear and an amazing video title."
+            placeholder="Enter your video title here."
             value={formData.title}
             onChange={handleInputChange}
             />
-            <FileInput />
-            <button className="btn btn-primary">Upload</button>
+              <FormField 
+            id="description"
+            label="Description"
+            placeholder="Enter your video descricption here."
+            value={formData.description}
+            as="textarea"
+            onChange={handleInputChange}
+            />
+            <FileInput 
+            id="video"
+            label="Video"
+            accept="video/*"
+            file={video.file}
+            previewUrl={video.previewUrl}
+            inputRef={video.inputRef}
+            onChange={video.handleFileChange}
+            onRest={video.restFile}
+            type="video"
+            />
+             <FileInput 
+            id="thumbnail"
+            label="Thumbnail"
+            accept="image/*"
+            file={thumbnail.file}
+            previewUrl={thumbnail.previewUrl}
+            inputRef={thumbnail.inputRef}
+            onChange={thumbnail.handleFileChange}
+            onRest={thumbnail.restFile}
+            type="image"
+            />
+             <FormField 
+            id="visibility"
+            label="visibility"
+            value={formData.visibility}
+            as="select"
+            options={[
+              { value: 'public', label: 'Public' },
+              { value: 'private', label: 'Private' },
+            ]}
+            onChange={handleInputChange}
+            />
         </form>
 
     </div>
