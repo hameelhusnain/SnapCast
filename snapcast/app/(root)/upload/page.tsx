@@ -11,6 +11,8 @@ const page = () => {
     description: '',
     visibility: 'public',
   });
+  const video = {};
+  const thumbnail = {};
     const[error, setError] = useState(null);
     const handleInputChange = (event: React.ChangeEvent<any>) => {
       const { name, value } = event.target as HTMLInputElement;
@@ -47,8 +49,24 @@ const page = () => {
             id="video"
             label="Video"
             accept="video/*"
+            file={video.file}
+            previewUrl={video.previewUrl}
+            inputRef={video.inputRef}
+            onChange={video.handleFileChange}
+            onRest={video.restFile}
+            type="video"
             />
-            <FileInput />
+             <FileInput 
+            id="thumbnail"
+            label="Thumbnail"
+            accept="image/*"
+            file={thumbnail.file}
+            previewUrl={thumbnail.previewUrl}
+            inputRef={thumbnail.inputRef}
+            onChange={thumbnail.handleFileChange}
+            onRest={thumbnail.restFile}
+            type="image"
+            />
              <FormField 
             id="visibility"
             label="visibility"
