@@ -43,7 +43,11 @@ const page = () => {
             as="textarea"
             onChange={handleInputChange}
             />
-            <FileInput />
+            <FileInput 
+            id="video"
+            label="Video"
+            accept="video/*"
+            />
             <FileInput />
              <FormField 
             id="visibility"
