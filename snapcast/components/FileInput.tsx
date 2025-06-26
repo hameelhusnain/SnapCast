@@ -1,6 +1,6 @@
-const FileInput = () => {
+const FileInput = ({ id, label, accept, file, previewUrl, inputRef, onChange, onRest, type }: FileInputProps) => {
   return (
-    <div>FileInput</div>
+    <selection>FileInput</selection>
   )
 }
 
