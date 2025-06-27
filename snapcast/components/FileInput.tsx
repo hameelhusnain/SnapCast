@@ -1,6 +1,6 @@
-const FileInput = ({ id, label, accept, file, previewUrl, inputRef, onChange, onRest, type }: FileInputProps) => {
+const FileInput = ({ id, label, accept, file, previewUrl, inputRef, onChange, type }: FileInputProps) => {
   return (
-    <selection className="file-input">
+    <section className="file-input">
       <label htmlFor={id}>
         {label}
       </label>
@@ -14,9 +14,14 @@ const FileInput = ({ id, label, accept, file, previewUrl, inputRef, onChange, on
       />
       {file && (
         <div className="file-preview">
-          {type === 'video' ? (
-            <video src={preview
-    </selection>
+          {type === 'video' && previewUrl ? (
+            <video src={previewUrl} controls width="250" />
+          ) : type !== 'video' && previewUrl ? (
+            <img src={previewUrl} alt="Preview" width="250" />
+          ) : null}
+        </div>
+      )}
+    </section>
   )
 }
 
