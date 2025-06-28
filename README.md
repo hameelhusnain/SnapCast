@@ -96,6 +96,62 @@ Whether you're a teacher sharing lessons, a developer explaining code, or a team
 
 ---
 
+## 🚀 Usage & Deployment
+
+### **Local Development**
+
+To use SnapCast on your computer:
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/SnapCast.git
+   cd SnapCast
+   ```
+
+2. **Install all required dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Install Drizzle ORM and PostgreSQL driver:**
+   ```bash
+   npm install drizzle-orm pg
+   ```
+
+4. **Install Xata client:**
+   ```bash
+   npm install @xata.io/client
+   ```
+
+5. **Set up Google Cloud OAuth (for Google sign-in):**
+   - Go to [Google Cloud Console](https://console.cloud.google.com/apis/credentials)
+   - Create OAuth 2.0 credentials and get your **Client ID** and **Client Secret**
+   - Add them to your `.env` file:
+     ```
+     GOOGLE_CLIENT_ID=your-google-client-id
+     GOOGLE_CLIENT_SECRET=your-google-client-secret
+     ```
+
+6. **Set up your `.env` file** with all required environment variables (see `.env.example` or project documentation).
+
+7. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
+
+8. **Open [http://localhost:3000](http://localhost:3000) in your browser.**
+
+---
+
+### **Deploying to Vercel**
+
+1. Push your code to GitHub or another git provider.
+2. Go to [Vercel](https://vercel.com/) and import your repository.
+3. Set all required environment variables in the Vercel dashboard (from your local `.env`).
+4. Deploy!
+
+---
+
 ## 🤝 Contributing
 
 Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.

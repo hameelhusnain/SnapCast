@@ -11,8 +11,8 @@ const page = () => {
     description: '',
     visibility: 'public',
   });
-  const video = {};
-  const thumbnail = {};
+  const [video, setVideo] = useState<{ file?: File; previewUrl?: string; inputRef?: React.RefObject<HTMLInputElement>; handleFileChange?: (e: ChangeEvent<HTMLInputElement>) => void; restFile?: () => void }>({});
+  const [thumbnail, setThumbnail] = useState<{ file?: File; previewUrl?: string; inputRef?: React.RefObject<HTMLInputElement>; handleFileChange?: (e: ChangeEvent<HTMLInputElement>) => void; restFile?: () => void }>({});
     const[error, setError] = useState(null);
     const handleInputChange = (event: React.ChangeEvent<any>) => {
       const { name, value } = event.target as HTMLInputElement;
@@ -49,10 +49,10 @@ const page = () => {
             id="video"
             label="Video"
             accept="video/*"
-            file={video.file}
-            previewUrl={video.previewUrl}
-            inputRef={video.inputRef}
-            onChange={video.handleFileChange}
+            file={video.file ?? null}
+            previewUrl={video.previewUrl ?? null}
+            inputRef={video.inputRef ?? null}
+            onChange={video.handleFileChange ?? (() => {})}
             onRest={video.restFile}
             type="video"
             />
@@ -60,10 +60,10 @@ const page = () => {
             id="thumbnail"
             label="Thumbnail"
             accept="image/*"
-            file={thumbnail.file}
-            previewUrl={thumbnail.previewUrl}
-            inputRef={thumbnail.inputRef}
-            onChange={thumbnail.handleFileChange}
+            file={thumbnail.file ?? null}
+            previewUrl={thumbnail.previewUrl ?? null}
+            inputRef={thumbnail.inputRef ?? null}
+            onChange={thumbnail.handleFileChange ?? (() => {})}
             onRest={thumbnail.restFile}
             type="image"
             />
