@@ -5,11 +5,13 @@ import {
   getVideoUploadUrl,
   getThumbnailUploadUrl,
   saveVideoDetails,
-} from "@/lib/actions/videoActions";
+} from "@/lib/actions/video";
 import { useRouter } from "next/navigation";
 import FileInput from "@/components/FileInput";
 import FormField from "@/components/FormField";
-// import { useFileInput } from "../../lib/hooks/useFileInput";
+// Update the import path if the file exists elsewhere, e.g.:
+import { useFileInput } from "@/lib/hooks/useFileInput";
+// Or create the file at app/lib/hooks/useFileInput.ts if it does not exist.
 import { MAX_THUMBNAIL_SIZE, MAX_VIDEO_SIZE } from "@/constants";
 
 const uploadFileToBunny = (
