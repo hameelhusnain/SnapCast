@@ -6,7 +6,7 @@ export const BUNNY = {
   STORAGE_BASE_URL: "https://sg.storage.bunnycdn.com/hameelhusnain",
   CDN_URL: "https://hameelhusnain-snapcast.b-cdn.net",
   EMBED_URL: "https://iframe.mediadelivery.net/embed",
-  TRANSCRIPT_URL: "https://vz-47a08e64-84d.b-cdn.net",
+  TRANSCRIPT_URL: "https://vz-e26fdc99-455.b-cdn.net",
 };
 
 export const emojis = ["😂", "😍", "👍"];
