@@ -10,6 +10,12 @@ import ImageWithFallback from "./ImageWithFallback";
 import DropdownList from "./DropdownList";
 import { updateURLParams } from "@/lib/utils";
 
+interface SharedHeaderProps {
+  subHeader?: string;
+  title?: string;
+  userImg?: string;
+}
+
 const SharedHeader = ({ subHeader, title, userImg }: SharedHeaderProps) => {
   const router = useRouter();
   const pathname = usePathname();
