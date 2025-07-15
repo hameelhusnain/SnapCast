@@ -12,6 +12,17 @@ import aj from "../arcjet";
 import { fixedWindow } from "@arcjet/next";
 import request from "../arcjet";
 
+type VideoDetails = {
+  title: string;
+  description: string;
+  videoUrl: string;
+  videoId: string;
+  thumbnailUrl: string;
+  tags: string | string[];
+  visibility: "public" | "private";
+  duration?: number | null;
+};
+
 // Constants with full names
 const VIDEO_STREAM_BASE_URL = BUNNY.STREAM_BASE_URL;
 const THUMBNAIL_STORAGE_BASE_URL = BUNNY.STORAGE_BASE_URL;
@@ -245,7 +256,7 @@ export const updateVideoVisibility = withErrorHandling(
     await validateWithArcjet(videoId);
     await db
       .update(videos)
-      .set({ visibility, updatedAt: new Date() })
+      .set({ visibility: visibility as "public" | "private", updatedAt: new Date() })
       .where(eq(videos.videoId, videoId));
 
     revalidatePaths(["/", `/video/${videoId}`]);
