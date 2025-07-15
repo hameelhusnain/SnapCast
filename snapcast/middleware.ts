@@ -30,6 +30,8 @@ const validate = aj
 
 // export default createMiddleware(validate);
 
+export default middleware;
+
 export const config = {
     matcher: [
         "/((?!api|_next/static|_next/image|favicon.ico|auth).*)",
