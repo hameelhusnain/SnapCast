@@ -10,8 +10,8 @@ typescript: {
   images: {
     remotePatterns: [
       {
+        hostname: "hameelhusnain-snapcast.b-cdn.net",
         protocol: "https",
-        hostname: "*",
         port: "",
         pathname: "/**",
       },
